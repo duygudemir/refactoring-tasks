@@ -11,6 +11,8 @@ def euclidean(a, b):
     d_y = b[1] - a[1]
     return (d_x**2 + d_y**2)**0.5"""
 
+# Minkowski mesafesi: p=1 için Manhattan, p=2 için Euclidean özel hallerini verir.
+
 def minkowski(a, b, p=2):
     return sum(abs(x - y) ** p for x, y in zip(a, b)) ** (1 / p)
 
